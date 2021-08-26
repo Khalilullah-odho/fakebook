@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f2f5;
+  font-family: inherit;
+}
+
+a {
+  color: #000000;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* CONTAINER */
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* MENUBAR */
+
+.nav {
+  background-color: #fff;
+  height: 65px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: auto 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.header {
+  font-family: "Baloo Chettan 2", cursive;
+  color: #1877f2;
+  font-weight: 600;
+  background-color: #fff;
+  font-size: 25px;
+  height: 98%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.menu {
+  height: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: none !important;
+}
+
+.icons {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .header {
+    display: none;
+  }
+  .menu {
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .icons {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .text {
+    display: none;
+  }
+}
+
+/* LOGIN_PAGE */
+
+.login-page {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.formItem {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.login-form-button {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  font-weight: 600 !important;
+}
+
+.divider {
+  color: #1c1e21;
+  direction: ltr;
+  line-height: 1.34;
+  font-size: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #dadde1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 16px;
+  text-align: center;
+  font-family: inherit;
+}
+
+.login-logo-section {
+  margin-bottom: 5rem;
+}
+.logo {
+  font-family: "Baloo Chettan 2", cursive;
+  font-weight: 600;
+  font-size: 4rem !important;
+  color: #1877f2;
+  margin: 0;
+  line-height: 2;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.align {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .align {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .login-logo-section {
+    margin-bottom: 0;
+  }
+}
+
+/* HOME_PAGE */
+
+.main-page {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  margin-top: 3em;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.post-main-box {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+/* POST_CARD */
+.post-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1em 1.5em;
+  border-radius: 10px;
+  margin-bottom: 20px !important ;
+  width: 100%;
+}
+
+.post-top {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.top-left,
+.top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.post-date {
+  font-size: 11px;
+  font-weight: 100;
+  color: #8c8cc8;
+  text-align: left;
+}
+
+.post-body {
+  text-align: justify;
+  word-wrap: break-word;
+  padding: 0 12px 0 30px;
+}
+
+.post-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  border-top: 0.5px solid #8c8cc8;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.comment-box {
+  background-color: #f0f2f5;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+
+/* CREATE_POST */
+
+.create-post {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.post-input {
+  width: 90%;
+  margin: 0 !important;
+}
+
+.form-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  background-color: #fff;
+}
+
+/* PROFILE_PAGE */
+
+.profile-page {
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.profile-cover {
+  width: 95%;
+  height: 300px;
+  background-color: #334756;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-pic {
+  background-color: black;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  width: 15rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 1.5em auto;
+}
+
+.profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  background-color: #f0f2f5;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  width: 95%;
+  margin: auto;
+}
+
+.info-data {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* FOLLOWERS */
+.followers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
